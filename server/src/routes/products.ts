@@ -5,7 +5,6 @@ const router = express.Router();
 
 /**
  * GET /products
- * 获取所有产品，按添加日期倒序排序
  */
 router.get('/', async (_req: Request, res: Response): Promise<void> => {
   try {
@@ -19,7 +18,6 @@ router.get('/', async (_req: Request, res: Response): Promise<void> => {
 
 /**
  * GET /products/:id
- * 根据产品 ID 获取详情
  */
 router.get(
   '/:id',
